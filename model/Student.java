@@ -31,6 +31,14 @@ public class Student {
 	@Pattern(regexp = "[A-Z]{1}[a-z]{2.40}")
 	private String surname;
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public String getSurname() {
 		return surname;
 	}
@@ -42,5 +50,17 @@ public class Student {
 	public int getSid() {
 		return sid;
 	}
+	
+	public Student () {
+		
+	}
+	
+	public Student(String name, String surname) {
+		setName(name);
+		setSurname(surname);
+		
+	}
+	
+	
 
 }
